@@ -68,6 +68,7 @@ class HomePage extends StatelessWidget {
       //     color: const Color.fromARGB(255, 7, 150, 163),
       //   ),
       // ), //commented korsi karon ek homepage e duita body hoy na
+<<<<<<< HEAD
       body: Padding(
         padding: const EdgeInsets.all(11),
         child: Row(
@@ -83,12 +84,45 @@ class HomePage extends StatelessWidget {
               child: TextButton(
                 onPressed: () {},
                 style: TextButton.styleFrom(
+=======
+      body: Column(
+        children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment
+                .center, //eita alignment set kore. eikhane alignment ekdom dandikh theke ashbe
+            //mainAxisAlignment: MainAxisAlignment.center, //eikhane alignment ekdom center e thakbe
+            //check out other options as well
+            crossAxisAlignment:
+                CrossAxisAlignment.center, //x axis borabor align kore
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: TextButton(
+                  onPressed: () {},
+                  style: TextButton.styleFrom(
+                    foregroundColor: const Color.fromARGB(255, 255, 255, 255),
+                    fixedSize: Size(150, 50),
+                    side: BorderSide(
+                      color: const Color.fromARGB(255, 205, 168, 100),
+                    ),
+                  ),
+                  child: Text("Text button"),
+                ),
+              ),
+
+              SizedBox(width: 20),
+
+              ElevatedButton(
+                onPressed: () {},
+                style: ElevatedButton.styleFrom(
+>>>>>>> 979c5af (Update Flutter assignment 3)
                   foregroundColor: const Color.fromARGB(255, 255, 255, 255),
                   fixedSize: Size(150, 50),
                   side: BorderSide(
                     color: const Color.fromARGB(255, 205, 168, 100),
                   ),
                 ),
+<<<<<<< HEAD
                 child: Text("Text button"),
               ),
             ),
@@ -122,6 +156,55 @@ class HomePage extends StatelessWidget {
             IconButton(onPressed: () {}, icon: Icon(Icons.add)),
           ],
         ),
+=======
+
+                child: Text("Elevated Button"),
+              ),
+              SizedBox(width: 20),
+              OutlinedButton(
+                onPressed: () {},
+                style: OutlinedButton.styleFrom(
+                  foregroundColor: const Color.fromARGB(255, 255, 255, 255),
+                  fixedSize: Size(150, 50),
+                  side: BorderSide(
+                    color: const Color.fromARGB(255, 205, 168, 100),
+                  ),
+                ),
+                child: Text("Outline Button"),
+              ),
+              IconButton(onPressed: () {}, icon: Icon(Icons.add)),
+            ],
+          ),
+          Container(
+            height: 200,
+            width: 200,
+            padding: EdgeInsets.all(20), //bitorer space thik kore
+            //margin: EdgeInsets.all(20), //bairer space space thik kore
+            alignment: Alignment.center, //leka ta center e thakbe
+            decoration: BoxDecoration(
+              color: const Color.fromARGB(255, 186, 96, 32),
+              border: Border.all(
+                width: 5,
+                color: Color.fromARGB(255, 7, 109, 95),
+              ),
+
+              shape: BoxShape.circle, //container ke circle shape e convert kore
+              gradient: RadialGradient(colors: [Colors.red, Colors.yellow]),
+            ),
+            child: Text("hello container"),
+          ),
+        ],
+      ),
+
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        tooltip: "Add",
+        backgroundColor: const Color.fromARGB(255, 154, 87, 95),
+        foregroundColor: const Color.fromARGB(255, 71, 216, 178),
+        hoverColor: const Color.fromARGB(255, 169, 60, 60),
+        shape: RoundedRectangleBorder(),
+        child: Icon(Icons.add),
+>>>>>>> 979c5af (Update Flutter assignment 3)
       ),
 
       floatingActionButton: FloatingActionButton(
