@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class Assignment3 extends StatelessWidget {
+class Assignment2 extends StatelessWidget {
   const Assignment3({super.key});
 
   @override
