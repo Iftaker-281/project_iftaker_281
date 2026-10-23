@@ -1,13 +1,8 @@
 import 'package:flutter/material.dart';
 import 'assigenment_2.dart';
 
-<<<<<<< HEAD
-class Assignment2 extends StatelessWidget {
-  const Assignment3({super.key});
-=======
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
->>>>>>> d4b99bd (Add Assignment 2 and Assignment 3)
 
   @override
   Widget build(BuildContext context) {
